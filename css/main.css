@@ -1,7 +1,172 @@
-.hidden {
-    display: none;
+body {
+  background-color: #b1d7a0;
+  /*
+  background-image: url(../images/dreaded-den.png);
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
-body {
-    margin: 0 auto;
+li {
+  text-decoration: none;
+  font-size: 18px;
 }
+
+h3 {
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #ffb66e;
+  margin-bottom: 30px;
+  text-shadow: 0 1px black;
+}
+
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffb66e;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-shadow: 0 1px black;
+}
+
+a {
+  color: #ff8000;
+  text-decoration: none;
+}
+a:visited {
+  color: #ff8000;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 30px !important;
+}
+
+.line-divider {
+  border-bottom: 3px solid #ffb66e;
+  margin-bottom: 20px;
+}
+
+#main-nav {
+  background-color: #5eae31;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 0;
+}
+
+#header-nav {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#header-nav li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffb66e;
+}
+
+#ogerpon-info, #truth-text, #vengeance-text, #video-text, #about-text, #masks-text {
+  background-color: #5eae31;
+  border: 3px solid #ff8000;
+  border-radius: 20px;
+}
+#ogerpon-info h3, #truth-text h3, #vengeance-text h3, #video-text h3, #about-text h3, #masks-text h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+#ogerpon-info p, #truth-text p, #vengeance-text p, #video-text p, #about-text p, #masks-text p {
+  line-height: 30px;
+}
+
+#truth-text, #about-text {
+  box-shadow: 5px 5px black;
+}
+
+#ogerpon-info, #vengeance-text {
+  box-shadow: -5px -5px black;
+}
+
+#truth-text {
+  margin-bottom: 30px;
+}
+
+#ogerpon-pic, #truth-pic, #vengeance-pic, #about-pic {
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 20px;
+  max-width: 50%;
+}
+
+#masks-text {
+  margin-bottom: 30px;
+}
+
+#mask-selector {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#mask-selector img {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+#mask-selector img:hover {
+  opacity: 50%;
+}
+
+#mask-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border: 3px solid #5eae31;
+  border-radius: 20px;
+}
+#mask-info p {
+  margin-top: 10px;
+  color: #ff8000;
+  text-shadow: 0 1px black;
+}
+
+.mask-icon {
+  border: 3px solid #ff8000;
+  border-radius: 20px;
+  max-width: 20%;
+}
+
+#ogerpon-mask-sprite {
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  li {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 42px;
+  }
+  p {
+    font-size: 24px;
+  }
+  #ogerpon-info, #truth-pic, #truth-text, #vengeance-text, #about-text {
+    order: -1;
+  }
+  #ogerpon-info h3, #truth-pic h3, #truth-text h3, #vengeance-text h3, #about-text h3 {
+    margin-bottom: 10px;
+  }
+  #ogerpon-pic, #truth-pic, #vengeance-pic, #about-pic, #ogerpon-mask-sprite {
+    max-width: 100%;
+  }
+  #ogerpon-mask-sprite {
+    order: 1;
+  }
+}/*# sourceMappingURL=main.css.map */
