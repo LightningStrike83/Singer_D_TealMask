@@ -12,11 +12,13 @@
     <div id="container">
         <header id="main-nav" class="full-width-grid-con">
             <ul id="header-nav">
+                <li><a href="#index.html"><img id="logo" src="images/teal-mask.png" alt="logo"></a></li>
                 <li><a href="#past-ogerpon">Past</a></li>
                 <li><a href="#truth">Truth</a></li>
                 <li><a href="#truth-video">Video</a></li>
                 <li><a href="#about-ogerpon">About</a></li>
                 <li><a href="#ogerpon-masks">Masks</a></li>
+                <li><a href="#gallery">Gallery</a></li>
             </ul>
         </header>
 
@@ -56,9 +58,14 @@
 
         <section id="truth-video" class="grid-con">
             <div id="video-text" class="col-span-full">
-                <h3>Video Re-Enactment</h3>
-                <p>One of the locals of Kitakami has graciously painted a re-enactment of the true history of Ogerpon, for those that wish for a visual stimulus.</p>
+                <h3>Video Rendition</h3>
+                <p>One of the locals of Kitakami has graciously painted an interpretation of the true history of Ogerpon, for those that wish for a visual aid.</p>
             </div>
+
+            <video controls class="col-span-full">
+                <source src="video/ogerpon_story.mp4">
+                <p>Oops, the Lousy Three stole the video.</p>
+            </video>
         </section>
 
         <div class="line-divider grid-con">
@@ -91,21 +98,63 @@
                 <img data-member="3" class="mask-icon" id="stone" src="images/cornerstone-mask.png" alt="The Cornerstone Mask">
             </div>
 
+            <video id="mask-tera" controls class="col-span-full m-col-span-5">
+                <source id="video-source" src="video/grass-tera.mp4">
+                <p>Oops, the Lousy Three stole the video.</p>
+            </video>
+
             <img class="col-span-2 m-col-span-3" id="ogerpon-mask-sprite" src="images/grass-mask.png" alt="Ogerpon's Teal Mask">
 
             <div id="mask-info" class="col-span-2 m-col-span-4">
                 <p id="mask-name">Mask: The Teal Mask</p>
+                <p id="mask-ability">Ability: Defiant</p>
                 <p id="mask-typing">Ogerpon's Type: Grass</p>
                 <p id="cudgel-typing">Ivy Cudgel Type: Grass</p>
                 <p id="type-weakness">Weak To: Flying, Poison, Ice, Fire, Bug</p>
                 <p id="resist">Resistances: Grass, Water, Electric, Ground</p>
+                <p id="tera-stat">Tera Stat Boost: Speed</p>
             </div>
         </section>
 
         <div class="line-divider grid-con">
         </div>
+
+        <section id="gallery" class="grid-con">
+            <div id="gallery-intro" class="col-span-full">
+                <h3>Ogerpon Gallery</h3>
+                <p>Check out some of these adorable photos of Ogerpon, captured by a visiting student from the Paldea region!</p>
+            </div>
+
+            <img id="main-photo" class="col-span-full m-col-span-9" src="images/happy-ogerpon-photo.jpg" alt="Ogerpon Gallery">
+
+            <div class="col-span-full m-col-span-3">
+                <div id="photo-selector">
+                    <img id="happy-ogerpon-photo" src="images/happy-ogerpon-photo.jpg" alt="A Happy Ogerpon">
+                    <img id="hearthflame-photo" src="images/hearthflame-photo.jpg" alt="Hearthflame Mask Retrieval Photo">
+                    <img id="wellspring-photo" src="images/wellspring-photo.jpg" alt="Wellspring Mask Retrieval Photo">
+                    <img id="cornerstone-photo" src="images/cornerstone-photo.jpg" alt="Cornerstone Mask Retrieval Photo">
+                </div>
+            </div>
+        </section>
+
+        <div class="line-divider grid-con">
+        </div>
+
+        <section id="top-nav" class="grid-con">
+            <a id="top-button" class="col-start-4 col-end-5 m-col-start-11 m-col-end-13" href="#past-ogerpon">
+                <p>&#x2191; To Top</p>
+            </a>
+        </section>
+
+        <section id="bottom" class="grid-con">
+            <h2 class="hidden">Copyright Information</h2>
+            <p class="col-span-full">All images used are used for a transformative work and nonprofit. The images are copyrighted or is a registered trademark. The contributor claims fair use. No copyright infringement is intended.</p>
+
+            <p class="col-span-full">Certain materials are included under fair use exemption of the U.S. Copyright Law and are restricted from further use.</p>
+
+            <p class="col-span-full">© 2023 Pokémon. © 1995–2023 Nintendo/Creatures Inc./GAME FREAK inc.</p>
+        </section>
     </div>
-    
     <script src="js/main.js"></script>
 </body>
 </html>
