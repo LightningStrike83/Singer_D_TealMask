@@ -60,6 +60,11 @@ section {
     margin-bottom: 30px;
     position: sticky;
     top: 0;
+    z-index: 50;
+}
+
+#logo {
+    max-width: 40%;
 }
 
 #header-nav {
@@ -68,14 +73,18 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     li {
         padding-top: 10px;
         padding-bottom: 10px;
         color: $orange-colour;
+        &:first-of-type {
+            justify-self: center;
+        }
     }
 }
 
-#ogerpon-info, #truth-text, #vengeance-text, #video-text, #about-text, #masks-text {
+#ogerpon-info, #truth-text, #vengeance-text, #video-text, #about-text, #masks-text, #gallery-intro, #bottom, #top-button {
     background-color: $dark-colour;
     border: 3px solid $dark-orange;
     border-radius: 20px;
@@ -97,6 +106,10 @@ section {
 }
 
 #truth-text {
+    margin-bottom: 30px;
+}
+
+#video-text {
     margin-bottom: 30px;
 }
 
@@ -152,6 +165,50 @@ section {
     margin-bottom: 20px;
 }
 
+#mask-tera {
+    margin-bottom: 30px;
+    display: flex;
+    align-self: center;
+    max-width: 70%;
+    justify-self: center;
+}
+
+#gallery-intro {
+    margin-bottom: 30px;
+}
+
+#main-photo {
+    max-width: 80%;
+    margin-bottom: 30px;
+    justify-self: center;
+}
+
+#photo-selector {
+    display: flex;
+    justify-content: space-evenly;
+    img {
+        max-width: 20%;
+        cursor: pointer;
+        &:hover {
+            opacity: 50%;
+        }
+    }
+}
+
+#top-button {
+    padding-top: 10px;
+    display: flex;
+    justify-self: center;
+}
+
+#bottom {
+    p {
+        &:first-of-type {
+            padding-top: 10px;
+        }
+    }
+}
+
 @media screen and (min-width: 768px) {
     li {
         font-size: 24px;
@@ -163,6 +220,10 @@ section {
 
     p {
         font-size: 24px;
+    }
+
+    #logo {
+        max-width: 60%;
     }
 
     #ogerpon-info, #truth-pic, #truth-text, #vengeance-text, #about-text {
@@ -178,5 +239,18 @@ section {
 
     #ogerpon-mask-sprite {
         order: 1;
+    }
+
+    #mask-tera {
+        max-width: 100%;
+    }
+
+    #photo-selector {
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            max-width: 70%;
+            margin-bottom: 10px;
+        }
     }
 }
